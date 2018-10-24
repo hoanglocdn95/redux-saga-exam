@@ -13,7 +13,6 @@ class ListItem extends Component {
         this.state = {
             displayDefault: 'inline-block',
             displayEdit: 'none',
-            name: this.props.listItem
         }
     }
 
@@ -76,7 +75,6 @@ class ListItem extends Component {
                         type="text" 
                         className="form-control"
                         name="nameItemEdit"
-                        value={this.state.name}
                         style={this.displayEdit()}
                         onChange={this.getNameItem}
                     />
